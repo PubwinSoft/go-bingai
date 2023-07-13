@@ -36,8 +36,8 @@ const navType = {
 const navConfigs = [
   {
     key: navType.github,
-    label: '开源地址',
-    url: 'https://github.com/adams549659584/go-proxy-bingai',
+    label: '帮助中心',
+    url: 'https://www.77388.cn/newbing',
   },
   {
     key: navType.version,
@@ -143,7 +143,7 @@ const saveUserToken = () => {
     <template #header>
       <div class="text-3xl py-2">设置用户</div>
     </template>
-    <NInput size="large" v-model:value="userToken" type="text" placeholder="用户 Cookie ,仅需要 _U 的值" />
+    <NInput size="large" v-model:value="userToken" type="text" placeholder="用户 Cookie ,仅需要 _U 的值,如需帮助请前往帮助中心" />
     <template #action>
       <NButton size="large" @click="isShowSetTokenModal = false">取消</NButton>
       <NButton ghost size="large" type="info" @click="saveUserToken">保存</NButton>
